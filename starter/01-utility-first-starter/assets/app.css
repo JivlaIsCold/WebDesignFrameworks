@@ -18,6 +18,9 @@
     --color-paper: #f0eee3;
     --color-ink: #16220e;
     --color-link: #0b5c2a;
+    --color-ink-deep: #16220e;
+    --color-on-dark: #f0eee3;
+    --color-lime: #d8f16b;
     --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
   }
 }
@@ -176,11 +179,17 @@
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
+  .flex {
+    display: flex;
+  }
   .inline-block {
     display: inline-block;
   }
   .max-w-\[66ch\] {
     max-width: 66ch;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .border-\(length\:--rule\) {
     border-style: var(--tw-border-style);
@@ -188,6 +197,12 @@
   }
   .border-ink {
     border-color: var(--color-ink);
+  }
+  .border-ink-deep {
+    border-color: var(--color-ink-deep);
+  }
+  .bg-ink {
+    background-color: var(--color-ink);
   }
   .bg-paper {
     background-color: var(--color-paper);
@@ -250,6 +265,9 @@
   .text-link {
     color: var(--color-link);
   }
+  .text-on-dark {
+    color: var(--color-on-dark);
+  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -261,8 +279,8 @@
   --rule: 1.5px;
   --brand-colour: #0b5c2a;
 }
-a {
-  color: var(--brand-colour);
+::selection {
+  background-color: var(--color-lime);
 }
 .hero-eyebrow {
   font-family: "Hanken Grotesk", sans-serif;
