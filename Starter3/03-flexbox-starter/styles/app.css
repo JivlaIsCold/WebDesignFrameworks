@@ -16,8 +16,30 @@
   --color-link: #0b5c2a;
   --color-on-light: #16220e;
   --color-on-dark: #f0eee3;
+  --color-Brand: var(--color-green);
 }
 
 :root {
   --rule: 1.5px;
+}
+
+.brandCircle::before {
+    content: "";
+    display: inline-block;
+
+    width: 0.7rem;
+    height: 0.7rem;
+
+    background-color: var(--color-Brand);
+    border-radius: 50%;
+
+    margin-right: 0.45rem;
+}
+.support-cell {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
