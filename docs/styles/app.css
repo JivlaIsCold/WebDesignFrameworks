@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
 @import "tailwindcss";
+
 
 /* Your site's design tokens go in an @theme block here, from your own Figma
    variables. That is week 7. Until then this file only imports Tailwind. */
@@ -10,8 +13,9 @@
    --color-border: #F0F0F0;
    --color-text: #27262B;
 
-   --font-sans:
-   "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+   
+   --font-sans: "Nunito", sans-serif;
+
 
    
    --text-p: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
