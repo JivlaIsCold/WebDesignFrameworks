@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..80');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
 
 @import "tailwindcss";
 
@@ -11,8 +11,8 @@
    --color-accent: #FFB84D;
    --color-accent-light: #FFD99F;
    --color-border: #F0F0F0;
-   --color-text: #27262B;
-
+   --color-text: #282828;
+   --color-stroke: #E3E3E3;
    
    --font-sans: "Atkinson Hyperlegible Next", sans-serif;
 
@@ -29,4 +29,10 @@
    --spacing: 0.25rem;
 
 
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-accent-light bg-accent px-5 py-1.5 text-p font-medium text-text transition-colors hover:bg-accent-light;
+  }
 }
